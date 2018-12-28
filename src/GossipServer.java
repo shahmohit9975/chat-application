@@ -4,8 +4,9 @@ import java.net.*;
 
 public class GossipServer {
 	public static void main(String[] args) throws Exception {
+		//server is started
 		ServerSocket server_socket = new ServerSocket(9924);
-		System.out.println("Server is ready for chatting");
+		System.out.println("Server is ready for chatting, waiting for client request");
 		Socket socket = server_socket.accept();
 		// reading from keyboard
 		BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
