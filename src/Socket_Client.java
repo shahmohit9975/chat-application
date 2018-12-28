@@ -16,7 +16,7 @@ public class Socket_Client {
 		Socket socket = new Socket("localhost", 9924);
 		// reading from keyboard
 		BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
-		// sending to client [out object]
+		// sending to server [out object]
 		OutputStream o_stream = socket.getOutputStream();
 		PrintWriter out = new PrintWriter(o_stream, true);
 
